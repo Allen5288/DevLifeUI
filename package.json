@@ -9,6 +9,22 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "vanilla-extract",
+    "css-in-js"
+  ],
+  "author": "Allen Xie",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/devlife-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/devlife-ui/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -17,7 +33,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run test && npm run build"
   },
   "peerDependencies": {
     "react": "^18.0.0",

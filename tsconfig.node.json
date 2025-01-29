@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2023"],
+    "lib": ["ES2020"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -10,7 +10,8 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "composite":true,
+    "noEmit": false,
 
     /* Linting */
     "strict": true,
